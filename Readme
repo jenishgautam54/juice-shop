@@ -1,0 +1,67 @@
+# Juice Shop Vulnerability Testing Tools
+
+This repository hosts a set of tools specifically designed for testing security vulnerabilities in the OWASP Juice Shop application. These tools aim to facilitate the identification and remediation of security flaws in a controlled educational environment.
+
+#Prerequisites
+
+Before you begin, make sure you have the following installed on your system:
+
+- **Kali Linux (or any Linux distribution)**
+- **Node.js and npm** - Needed for running Juice Shop.
+- **Python 3.7 or higher** - Required for the scanning tools.
+- **Git** - Used for cloning repositories.
+
+#Check installations by running:
+
+node -v
+npm -v
+python3 --version
+
+#Installing Juice Shop
+
+Step 1: Clone the Juice Shop Repository
+
+Open your terminal and execute:
+
+git clone https://github.com/juice-shop/juice-shop.git
+cd juice-shop
+
+Step 2: Install Dependencies
+
+npm install
+
+Step 3: Start the Juice Shop Application
+
+npm start
+
+Juice Shop will be running at http://localhost:3000. Open this URL in your browser to confirm it's operational.
+
+#Setting Up the Scanning Tools
+
+Unzipping the Tool:
+If you’ve received the tool as a .zip file:
+
+
+unzip your-tool-name.zip -d your-tool-directory
+cd your-tool-directory
+
+Install Required Python Libraries:
+
+pip install -r requirements.txt
+
+The requirements.txt should list necessary libraries like requests, beautifulsoup4, etc.
+
+#Running the Tools
+
+Run the Main Script:
+Execute the main scanning script:
+
+python3 main.py
+
+Select Scanning Options:
+The tool may prompt you to input:
+
+    Target URL: http://localhost:3000 (for scanning the locally running Juice Shop).
+
+##For more detailed guided steps to use and understand the tool go through the USER MANUAL attached with this file.##
+##Tool source code is also attached with this readme file##
